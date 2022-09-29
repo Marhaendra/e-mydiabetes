@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="id.hendra.e_mydiabetes.ui.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_RegisterFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_RegisterFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="id.hendra.e_mydiabetes.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_landingFragment"
+            app:destination="@id/landingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_loginFragment_to_bodyMeasFragment"
+            app:destination="@id/bodyMeasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="id.hendra.e_mydiabetes.ui.LandingFragment"
+        android:label="fragment_landing"
+        tools:layout="@layout/fragment_landing" >
+        <action
+            android:id="@+id/action_landingFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_landingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_landingFragment_to_bodyMeasFragment"
+            app:destination="@id/bodyMeasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bodyMeasFragment"
+        android:name="id.hendra.e_mydiabetes.ui.BodyMeasFragment"
+        android:label="fragment_body_meas"
+        tools:layout="@layout/fragment_body_meas" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="id.hendra.e_mydiabetes.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_landingFragment"
+            app:destination="@id/landingFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_bodyMeasFragment"
+            app:destination="@id/bodyMeasFragment" />
+    </fragment>
+</navigation>

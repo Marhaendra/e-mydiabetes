@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "130236357635",
+    "firebase_url": "https://e-mydiabetes-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "e-mydiabetes",
+    "storage_bucket": "e-mydiabetes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130236357635:android:924d1fc7b26407e42b4236",
+        "android_client_info": {
+          "package_name": "id.hendra.e_mydiabetes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130236357635-a0orc43g5as1romfeo4djavq8mmn833a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0vJ_ujs3qi4QF8QcBS_EXq5weNNmlLYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130236357635-a0orc43g5as1romfeo4djavq8mmn833a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
