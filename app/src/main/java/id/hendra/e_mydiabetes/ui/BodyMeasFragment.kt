@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import id.hendra.e_mydiabetes.R
 import id.hendra.e_mydiabetes.databinding.FragmentBodyMeasBinding
+import kotlinx.android.synthetic.main.layout_navbar.*
+import kotlinx.android.synthetic.main.layout_navbar.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,5 +32,19 @@ class BodyMeasFragment : Fragment() {
     ): View {
         _binding = FragmentBodyMeasBinding.inflate(inflater, container,false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        moveToVital()
+
+    }
+
+    private fun moveToVital(){
+        binding.footer.footer_vital.setOnClickListener{
+            findNavController().navigate(R.id.action_bodyMeasFragment_to_vitalMeasFragment)
+            ruler_icon.setImageResource(R.drawable.ic_ruler)
+        }
     }
 }

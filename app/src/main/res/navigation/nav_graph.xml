@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/landingFragment">
+    app:startDestination="@id/bodyMeasFragment">
 
     <fragment
         android:id="@+id/RegisterFragment"
@@ -47,13 +47,20 @@
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_landingFragment_to_bodyMeasFragment"
-            app:destination="@id/bodyMeasFragment" />
+            app:destination="@id/bodyMeasFragment"
+            app:popUpToInclusive="true"/>
+
     </fragment>
     <fragment
         android:id="@+id/bodyMeasFragment"
         android:name="id.hendra.e_mydiabetes.ui.BodyMeasFragment"
         android:label="fragment_body_meas"
-        tools:layout="@layout/fragment_body_meas" />
+        tools:layout="@layout/fragment_body_meas" >
+        <action
+            android:id="@+id/action_bodyMeasFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="id.hendra.e_mydiabetes.ui.SplashFragment"
@@ -65,5 +72,15 @@
         <action
             android:id="@+id/action_splashFragment_to_bodyMeasFragment"
             app:destination="@id/bodyMeasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vitalMeasFragment"
+        android:name="id.hendra.e_mydiabetes.ui.VitalMeasFragment"
+        android:label="fragment_vital_meas"
+        tools:layout="@layout/fragment_vital_meas" >
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_bodyMeasFragment"
+            app:destination="@id/bodyMeasFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.VitalMeasFragment">
+
+    <TextView
+        android:id="@+id/vital_meas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="52dp"
+        android:text="Pengukuran Vital"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toEndOf="@id/vital_meas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vital_meas"
+        app:layout_constraintBottom_toBottomOf="@id/vital_meas"
+        android:src="@drawable/cirle_shadow"
+        android:elevation="25dp"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/profile_pict"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/vital_meas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vital_meas"
+        app:layout_constraintBottom_toBottomOf="@id/vital_meas"
+        android:src="@drawable/ic_user"
+        android:elevation="25dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/blood_sugar_linear"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf="@id/vital_meas"
+        app:layout_constraintTop_toBottomOf="@id/vital_meas"
+        android:background="@drawable/square_shadow"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+                android:id="@+id/blood_sugar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_blood_sugar"
+                android:layout_marginTop="12dp"
+                android:elevation="25dp"/>
+        <TextView
+            android:id="@+id/blood_sugar_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Gula Darah"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Pembaharuan terakhir"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="3 September 2022"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blood_pressure_linear"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toEndOf="@id/blood_sugar_linear"
+        app:layout_constraintTop_toBottomOf="@id/vital_meas"
+        android:background="@drawable/square_shadow"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/blood_pressure"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_blood_pressure_2"
+            android:layout_marginTop="12dp"
+            android:elevation="25dp"/>
+        <TextView
+            android:id="@+id/blood_pressure_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Tekanan Darah"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Pembaharuan terakhir"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="3 September 2022"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/food_linear"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/square_shadow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/blood_sugar_linear"
+        app:layout_constraintTop_toBottomOf="@id/vital_meas"
+        app:layout_constraintEnd_toStartOf="@id/activity_linear">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:elevation="25dp"
+            android:src="@drawable/ic_hot_meal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Makanan"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Pembaharuan terakhir"
+            android:textColor="@color/grey2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="3 September 2022"
+            android:textColor="@color/grey2"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_linear"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toStartOf ="parent"
+        app:layout_constraintTop_toBottomOf="@id/blood_sugar_linear"
+        android:background="@drawable/square_shadow"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_exercise_running"
+            android:layout_marginTop="12dp"
+            android:elevation="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Aktivitas"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Pembaharuan terakhir"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="3 September 2022"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hba1c_linear"
+        android:layout_width="160dp"
+        android:layout_height="190dp"
+        app:layout_constraintStart_toEndOf="@id/activity_linear"
+        app:layout_constraintTop_toBottomOf="@id/blood_sugar_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/square_shadow"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_blood_cells"
+            android:layout_marginTop="12dp"
+            android:elevation="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="HbAC1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Pembaharuan terakhir"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="3 September 2022"
+            android:textColor="@color/grey2"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!--footer-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/activity_linear"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/layout_navbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

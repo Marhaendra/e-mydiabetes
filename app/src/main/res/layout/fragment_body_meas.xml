@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/body_meas"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="98dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="52dp"
         android:text="Pengukuran Tubuh"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -28,16 +28,193 @@
         app:layout_constraintTop_toTopOf="@id/body_meas"
         app:layout_constraintBottom_toBottomOf="@id/body_meas"
         android:src="@drawable/cirle_shadow"
-        android:elevation="25dp"/>
+        android:elevation="25dp"
+        android:layout_marginRight="16dp"/>
 
     <ImageView
-        android:layout_width="36dp"
-        android:layout_height="36dp"
+        android:id="@+id/profile_pict"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         app:layout_constraintStart_toEndOf="@id/body_meas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/body_meas"
         app:layout_constraintBottom_toBottomOf="@id/body_meas"
-        android:src="@drawable/cirle_shadow"
-        android:elevation="25dp"/>
+        android:src="@drawable/ic_user"
+        android:elevation="25dp"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/weight_bar"
+        app:layout_constraintTop_toBottomOf="@id/body_meas"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:src="@drawable/btn_primary"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        />
+    <TextView
+        android:id="@+id/weight_text"
+        app:layout_constraintStart_toEndOf="@id/weight_bar"
+        app:layout_constraintTop_toTopOf="@id/weight_bar"
+        app:layout_constraintBottom_toBottomOf="@id/weight_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Berat Badan"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="4dp"/>
+    <ImageView
+        android:id="@+id/weight_value"
+        app:layout_constraintStart_toEndOf="@id/weight_text"
+        app:layout_constraintTop_toTopOf="@id/weight_text"
+        app:layout_constraintBottom_toBottomOf="@id/weight_text"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:src="@drawable/btn_value"
+        android:layout_marginStart="21dp"/>
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="@id/weight_value"
+        app:layout_constraintEnd_toStartOf="@id/weight_unit"
+        app:layout_constraintTop_toTopOf="@id/weight_value"
+        app:layout_constraintBottom_toBottomOf="@id/weight_value"
+        android:text="75"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"/>
+    <TextView
+        android:id="@+id/weight_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toEndOf="@id/weight"
+        app:layout_constraintEnd_toEndOf="@id/weight_value"
+        app:layout_constraintTop_toTopOf="@id/weight_value"
+        app:layout_constraintBottom_toBottomOf="@id/weight_value"
+        android:text="KG"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"/>
+
+    <ImageView
+        android:id="@+id/height_bar"
+        app:layout_constraintTop_toBottomOf="@id/weight_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:src="@drawable/btn_primary"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:id="@+id/height_text"
+        app:layout_constraintStart_toEndOf="@id/height_bar"
+        app:layout_constraintTop_toTopOf="@id/height_bar"
+        app:layout_constraintBottom_toBottomOf="@id/height_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="Tinggi Badan"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="4dp"/>
+    <ImageView
+        android:id="@+id/height_value"
+        app:layout_constraintStart_toEndOf="@id/height_text"
+        app:layout_constraintTop_toTopOf="@id/height_text"
+        app:layout_constraintBottom_toBottomOf="@id/height_text"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:src="@drawable/btn_value"
+        android:layout_marginStart="16dp"/>
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        app:layout_constraintStart_toStartOf="@id/height_value"
+        app:layout_constraintEnd_toStartOf="@id/height_unit"
+        app:layout_constraintTop_toTopOf="@id/height_value"
+        app:layout_constraintBottom_toBottomOf="@id/height_value"
+        android:text="121"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="8dp"/>
+    <TextView
+        android:id="@+id/height_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        app:layout_constraintStart_toEndOf="@id/height"
+        app:layout_constraintEnd_toEndOf="@id/height_value"
+        app:layout_constraintTop_toTopOf="@id/height_value"
+        app:layout_constraintBottom_toBottomOf="@id/height_value"
+        android:text="CM"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"/>
+
+
+    <ImageView
+        android:id="@+id/weight_banner"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toBottomOf="@id/height_value"
+        android:src="@drawable/square_shadow"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/weight_banner_txt"
+        app:layout_constraintStart_toStartOf="@id/weight_banner"
+        app:layout_constraintTop_toTopOf="@id/weight_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Data Berat Badan 2022"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/height_banner"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toBottomOf="@id/weight_banner"
+        android:src="@drawable/square_shadow"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+    <TextView
+        android:id="@+id/height_banner_txt"
+        app:layout_constraintStart_toStartOf="@id/height_banner"
+        app:layout_constraintTop_toTopOf="@id/height_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Data Tinggi Badan 2022"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"/>
+
+    <!--footer-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/layout_navbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
