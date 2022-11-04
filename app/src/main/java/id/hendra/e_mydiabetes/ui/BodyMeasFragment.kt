@@ -11,16 +11,6 @@ import id.hendra.e_mydiabetes.databinding.FragmentBodyMeasBinding
 import kotlinx.android.synthetic.main.layout_navbar.*
 import kotlinx.android.synthetic.main.layout_navbar.view.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [BodyMeasFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class BodyMeasFragment : Fragment() {
 
     private var _binding : FragmentBodyMeasBinding? = null
@@ -45,6 +35,7 @@ class BodyMeasFragment : Fragment() {
         binding.footer.footer_vital.setOnClickListener{
             findNavController().navigate(R.id.action_bodyMeasFragment_to_vitalMeasFragment)
             ruler_icon.setImageResource(R.drawable.ic_ruler)
+            heart_icon.setImageResource(R.drawable.ic_heart_c)
         }
     }
 }

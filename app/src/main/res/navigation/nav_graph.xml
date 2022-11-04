@@ -30,7 +30,8 @@
             app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_loginFragment_to_bodyMeasFragment"
-            app:destination="@id/bodyMeasFragment" />
+            app:destination="@id/bodyMeasFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/landingFragment"
@@ -68,10 +69,12 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_landingFragment"
-            app:destination="@id/landingFragment" />
+            app:destination="@id/landingFragment"
+            app:popUpToInclusive="true"/>
         <action
             android:id="@+id/action_splashFragment_to_bodyMeasFragment"
-            app:destination="@id/bodyMeasFragment" />
+            app:destination="@id/bodyMeasFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/vitalMeasFragment"
@@ -81,6 +84,34 @@
         <action
             android:id="@+id/action_vitalMeasFragment_to_bodyMeasFragment"
             app:destination="@id/bodyMeasFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_bloodSugarFragment"
+            app:destination="@id/bloodSugarFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_bloodPressureFragment"
+            app:destination="@id/bloodPressureFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/bloodPressureFragment"
+        android:name="id.hendra.e_mydiabetes.ui.BloodPressureFragment"
+        android:label="fragment_blood_pressure"
+        tools:layout="@layout/fragment_blood_pressure" >
+        <action
+            android:id="@+id/action_bloodPressureFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/bloodSugarFragment"
+        android:name="id.hendra.e_mydiabetes.ui.BloodSugarFragment"
+        android:label="fragment_blood_sugar"
+        tools:layout="@layout/fragment_blood_sugar" >
+        <action
+            android:id="@+id/action_bloodSugarFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
             app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

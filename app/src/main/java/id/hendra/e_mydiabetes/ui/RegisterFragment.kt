@@ -104,6 +104,7 @@ class RegisterFragment : Fragment() {
                 is Resource.Error -> {
                     Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
                 }
+                else -> {}
             }
         }
     }

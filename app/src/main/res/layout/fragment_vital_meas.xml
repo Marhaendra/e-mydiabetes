@@ -46,21 +46,23 @@
     <LinearLayout
         android:id="@+id/blood_sugar_linear"
         android:layout_width="160dp"
-        android:layout_height="190dp"
-        app:layout_constraintStart_toStartOf="@id/vital_meas"
+        android:layout_height="165dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/vital_meas"
         android:background="@drawable/square_shadow"
         android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="10dp">
         <ImageView
-                android:id="@+id/blood_sugar"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/ic_blood_sugar"
-                android:layout_marginTop="12dp"
-                android:elevation="25dp"/>
+            android:id="@+id/blood_sugar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_blood_sugar"
+            android:layout_marginTop="12dp"
+            android:elevation="25dp"/>
         <TextView
             android:id="@+id/blood_sugar_txt"
             android:layout_width="wrap_content"
@@ -91,7 +93,7 @@
     <LinearLayout
         android:id="@+id/blood_pressure_linear"
         android:layout_width="160dp"
-        android:layout_height="190dp"
+        android:layout_height="165dp"
         app:layout_constraintStart_toEndOf="@id/blood_sugar_linear"
         app:layout_constraintTop_toBottomOf="@id/vital_meas"
         android:background="@drawable/square_shadow"
@@ -99,7 +101,8 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="16dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="10dp">
         <ImageView
             android:id="@+id/blood_pressure"
             android:layout_width="40dp"
@@ -137,16 +140,16 @@
 
     <LinearLayout
         android:id="@+id/food_linear"
-        android:layout_width="150dp"
-        android:layout_height="190dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/square_shadow"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        app:layout_constraintStart_toEndOf="@id/blood_sugar_linear"
-        app:layout_constraintTop_toBottomOf="@id/vital_meas"
-        app:layout_constraintEnd_toStartOf="@id/activity_linear">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_linear"
+        android:elevation="10dp">
 
         <ImageView
             android:layout_width="40dp"
@@ -187,7 +190,7 @@
     <LinearLayout
         android:id="@+id/activity_linear"
         android:layout_width="160dp"
-        android:layout_height="190dp"
+        android:layout_height="165dp"
         app:layout_constraintStart_toStartOf ="parent"
         app:layout_constraintTop_toBottomOf="@id/blood_sugar_linear"
         android:background="@drawable/square_shadow"
@@ -195,7 +198,8 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="10dp">
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -232,16 +236,16 @@
     <LinearLayout
         android:id="@+id/hba1c_linear"
         android:layout_width="160dp"
-        android:layout_height="190dp"
+        android:layout_height="165dp"
         app:layout_constraintStart_toEndOf="@id/activity_linear"
-        app:layout_constraintTop_toBottomOf="@id/blood_sugar_linear"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blood_pressure_linear"
         android:background="@drawable/square_shadow"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="16dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="10dp">
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -252,7 +256,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="18dp"
-            android:text="HbAC1"
+            android:text="HbA1C"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_regular"
             android:textSize="16sp"
@@ -281,7 +285,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/activity_linear"
         app:layout_constraintBottom_toBottomOf="parent">
         <include layout="@layout/layout_navbar"/>
     </androidx.constraintlayout.widget.ConstraintLayout>

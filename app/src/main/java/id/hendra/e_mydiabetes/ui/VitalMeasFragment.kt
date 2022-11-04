@@ -32,18 +32,11 @@ class VitalMeasFragment : Fragment() {
     }
 
     private fun moveToBody(){
-        binding.footer?.footer_body?.setOnClickListener{
+        binding.footer.footer_body.setOnClickListener{
             findNavController().navigate(R.id.action_vitalMeasFragment_to_bodyMeasFragment)
-            heart_icon.setImageResource(R.drawable.ic_heart_c)
-            ruler_icon.setImageResource(R.drawable.ic_ruler)
+            heart_icon.setImageResource(R.drawable.ic_heart)
+            ruler_icon.setImageResource(R.drawable.ic_ruler_c)
         }
     }
-//    text color
-//    TextView textview p new TextView(this);
-//    textview.setMovementMethod(new ScrollingMethod());
-//    textview.setText(Html.fromHtml("Today: <font color=green>2</font>\nTomorrow: <font color=green>8</font>\nNext two weeks: <font color=green>45</font>");
-//    textview.setTextSize(16);
-//    textview.setTypeFace(null, TypeFace.BOLD);
-//    setContentView(textview);
 
 }

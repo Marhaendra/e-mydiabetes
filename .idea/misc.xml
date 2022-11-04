@@ -14,14 +14,17 @@
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout-v28/fragment_vital_meas.xml" value="0.75" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/activity_main.xml" value="0.29030797101449274" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/content_main.xml" value="0.29030797101449274" />
-        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_body_meas.xml" value="0.5" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_blood_pressure.xml" value="0.5" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_blood_sugar.xml" value="0.5" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_body_meas.xml" value="0.25" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_first.xml" value="0.29030797101449274" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_landing.xml" value="0.33" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_login.xml" value="0.29030797101449274" />
-        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_register.xml" value="0.5" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_register.xml" value="0.67" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_second.xml" value="0.29030797101449274" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_splash.xml" value="0.15421686746987953" />
-        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_vital_meas.xml" value="0.18" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_vital_meas.xml" value="0.25" />
+        <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/fragment_vital_meas2.xml" value="0.13333333333333333" />
         <entry key="..\:/Kuliah/PI/Project e-mydiabetes/app/src/main/res/layout/layout_navbar.xml" value="0.309375" />
       </map>
     </option>
