@@ -1,4 +1,4 @@
-package id.hendra.e_mydiabetes.ui
+package id.hendra.e_mydiabetes.ui.vital
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import id.hendra.e_mydiabetes.R
-import id.hendra.e_mydiabetes.databinding.FragmentBloodSugarBinding
-import id.hendra.e_mydiabetes.databinding.FragmentRegisterBinding
+import id.hendra.e_mydiabetes.databinding.FragmentBloodPressureBinding
 
-class BloodSugarFragment : Fragment() {
+class BloodPressureFragment : Fragment() {
 
-    private var _binding : FragmentBloodSugarBinding ?= null
+    private var _binding : FragmentBloodPressureBinding?= null
     private val binding get() = _binding!!
 
 
@@ -20,7 +19,7 @@ class BloodSugarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentBloodSugarBinding.inflate(inflater, container, false)
+        _binding = FragmentBloodPressureBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -34,11 +33,10 @@ class BloodSugarFragment : Fragment() {
     private fun button() {
         binding.apply {
             btnBack.setOnClickListener{
-                findNavController().navigate(R.id.action_bloodSugarFragment_to_vitalMeasFragment)
+                findNavController().navigate(R.id.action_bloodPressureFragment_to_vitalMeasFragment)
             }
             btnSave.setOnClickListener {
             }
         }
     }
-
 }

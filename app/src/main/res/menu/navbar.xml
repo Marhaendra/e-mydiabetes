@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bodyMeasFragment"
+        android:title="Body Measurment"
+        android:icon="@drawable/body_meas_selector"/>
+    <item
+        android:id="@+id/vitalMeasFragment"
+        android:title="Vital Measurment"
+        android:icon="@drawable/vital_meas_selector"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

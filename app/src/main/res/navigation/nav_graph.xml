@@ -96,7 +96,7 @@
     </fragment>
     <fragment
         android:id="@+id/bloodPressureFragment"
-        android:name="id.hendra.e_mydiabetes.ui.BloodPressureFragment"
+        android:name="id.hendra.e_mydiabetes.ui.vital.BloodPressureFragment"
         android:label="fragment_blood_pressure"
         tools:layout="@layout/fragment_blood_pressure" >
         <action
@@ -106,7 +106,7 @@
     </fragment>
     <fragment
         android:id="@+id/bloodSugarFragment"
-        android:name="id.hendra.e_mydiabetes.ui.BloodSugarFragment"
+        android:name="id.hendra.e_mydiabetes.ui.vital.BloodSugarFragment"
         android:label="fragment_blood_sugar"
         tools:layout="@layout/fragment_blood_sugar" >
         <action

@@ -25,18 +25,9 @@ class VitalMeasFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        moveToBody()
     }
-
-    private fun moveToBody(){
-        binding.footer.footer_body.setOnClickListener{
-            findNavController().navigate(R.id.action_vitalMeasFragment_to_bodyMeasFragment)
-            heart_icon.setImageResource(R.drawable.ic_heart)
-            ruler_icon.setImageResource(R.drawable.ic_ruler_c)
-        }
-    }
-
 }

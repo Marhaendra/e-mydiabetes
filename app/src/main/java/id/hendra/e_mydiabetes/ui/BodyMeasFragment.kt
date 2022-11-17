@@ -5,7 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI
+import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import id.hendra.e_mydiabetes.R
 import id.hendra.e_mydiabetes.databinding.FragmentBodyMeasBinding
 import kotlinx.android.synthetic.main.layout_navbar.*
@@ -27,15 +35,6 @@ class BodyMeasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        moveToVital()
-
     }
 
-    private fun moveToVital(){
-        binding.footer.footer_vital.setOnClickListener{
-            findNavController().navigate(R.id.action_bodyMeasFragment_to_vitalMeasFragment)
-            ruler_icon.setImageResource(R.drawable.ic_ruler)
-            heart_icon.setImageResource(R.drawable.ic_heart_c)
-        }
-    }
 }
