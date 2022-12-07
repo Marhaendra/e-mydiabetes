@@ -61,6 +61,10 @@
             android:id="@+id/action_bodyMeasFragment_to_vitalMeasFragment"
             app:destination="@id/vitalMeasFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_bodyMeasFragment_to_medFragment"
+            app:destination="@id/medFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -93,6 +97,22 @@
             android:id="@+id/action_vitalMeasFragment_to_bloodPressureFragment"
             app:destination="@id/bloodPressureFragment"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_foodFragment"
+            app:destination="@id/foodFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_activityFragment"
+            app:destination="@id/activityFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_hbA1cFragment"
+            app:destination="@id/hbA1cFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_vitalMeasFragment_to_medFragment"
+            app:destination="@id/medFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/bloodPressureFragment"
@@ -112,6 +132,49 @@
         <action
             android:id="@+id/action_bloodSugarFragment_to_vitalMeasFragment"
             app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="id.hendra.e_mydiabetes.ui.vital.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" >
+        <action
+            android:id="@+id/action_foodFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="id.hendra.e_mydiabetes.ui.vital.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" >
+        <action
+            android:id="@+id/action_activityFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/hbA1cFragment"
+        android:name="id.hendra.e_mydiabetes.ui.vital.HbA1cFragment"
+        android:label="HbA1cFragment" >
+        <action
+            android:id="@+id/action_hbA1cFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/medFragment"
+        android:name="id.hendra.e_mydiabetes.ui.MedFragment"
+        android:label="fragment_med"
+        tools:layout="@layout/fragment_med" >
+        <action
+            android:id="@+id/action_medFragment_to_vitalMeasFragment"
+            app:destination="@id/vitalMeasFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_medFragment_to_bodyMeasFragment"
+            app:destination="@id/bodyMeasFragment"
             app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

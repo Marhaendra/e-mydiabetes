@@ -7,7 +7,7 @@
     tools:context=".ui.BodyMeasFragment">
 
     <TextView
-        android:id="@+id/body_meas"
+        android:id="@+id/med"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
@@ -23,10 +23,10 @@
     <ImageView
         android:layout_width="36dp"
         android:layout_height="36dp"
-        app:layout_constraintStart_toEndOf="@id/body_meas"
+        app:layout_constraintStart_toEndOf="@id/med"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/body_meas"
-        app:layout_constraintBottom_toBottomOf="@id/body_meas"
+        app:layout_constraintTop_toTopOf="@id/med"
+        app:layout_constraintBottom_toBottomOf="@id/med"
         android:src="@drawable/cirle_shadow"
         android:elevation="25dp"
         android:layout_marginRight="16dp"/>
@@ -35,17 +35,17 @@
         android:id="@+id/profile_pict"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:layout_constraintStart_toEndOf="@id/body_meas"
+        app:layout_constraintStart_toEndOf="@id/med"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/body_meas"
-        app:layout_constraintBottom_toBottomOf="@id/body_meas"
+        app:layout_constraintTop_toTopOf="@id/med"
+        app:layout_constraintBottom_toBottomOf="@id/med"
         android:src="@drawable/ic_user"
         android:elevation="25dp"
         android:layout_marginRight="16dp"/>
 
     <ImageView
-        android:id="@+id/weight_bar"
-        app:layout_constraintTop_toBottomOf="@id/body_meas"
+        android:id="@+id/plus_btn"
+        app:layout_constraintTop_toBottomOf="@id/med"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="2dp"
         android:layout_height="16dp"
@@ -55,9 +55,9 @@
         />
     <TextView
         android:id="@+id/weight_text"
-        app:layout_constraintStart_toEndOf="@id/weight_bar"
-        app:layout_constraintTop_toTopOf="@id/weight_bar"
-        app:layout_constraintBottom_toBottomOf="@id/weight_bar"
+        app:layout_constraintStart_toEndOf="@id/plus_btn"
+        app:layout_constraintTop_toTopOf="@id/plus_btn"
+        app:layout_constraintBottom_toBottomOf="@id/plus_btn"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:text="Berat Badan"
@@ -102,8 +102,8 @@
         android:layout_marginEnd="8dp"/>
 
     <ImageView
-        android:id="@+id/height_bar"
-        app:layout_constraintTop_toBottomOf="@id/weight_bar"
+        android:id="@+id/bar"
+        app:layout_constraintTop_toBottomOf="@id/plus_btn"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="2dp"
         android:layout_height="16dp"
@@ -113,9 +113,9 @@
         />
     <TextView
         android:id="@+id/height_text"
-        app:layout_constraintStart_toEndOf="@id/height_bar"
-        app:layout_constraintTop_toTopOf="@id/height_bar"
-        app:layout_constraintBottom_toBottomOf="@id/height_bar"
+        app:layout_constraintStart_toEndOf="@id/bar"
+        app:layout_constraintTop_toTopOf="@id/bar"
+        app:layout_constraintBottom_toBottomOf="@id/bar"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:text="Tinggi Badan"
@@ -212,16 +212,16 @@
 
 
     <!--footer-->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/navbar">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:layout_constraintEnd_toEndOf="parent">
+        <include layout="@layout/layout_navbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

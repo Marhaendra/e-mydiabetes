@@ -35,6 +35,16 @@ class BodyMeasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        navigation()
+    }
+
+    private fun navigation(){
+        binding.footer.footer_vital?.setOnClickListener{
+            findNavController().navigate(R.id.action_bodyMeasFragment_to_vitalMeasFragment)
+        }
+        binding.footer.footer_medicine?.setOnClickListener{
+            findNavController().navigate(R.id.action_bodyMeasFragment_to_medFragment)
+        }
     }
 
 }

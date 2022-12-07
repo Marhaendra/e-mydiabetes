@@ -29,5 +29,36 @@ class VitalMeasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        navigation()
+        subMenuNav()
+    }
+
+    private fun navigation(){
+        binding.footer.footer_body?.setOnClickListener{
+            findNavController().navigate(R.id.action_vitalMeasFragment_to_bodyMeasFragment)
+        }
+        binding.footer.footer_medicine?.setOnClickListener{
+            findNavController().navigate(R.id.action_vitalMeasFragment_to_medFragment)
+        }
+    }
+
+    private fun subMenuNav(){
+        binding.apply {
+            bloodSugarLinear.setOnClickListener {
+                findNavController().navigate(R.id.action_vitalMeasFragment_to_bloodSugarFragment)
+            }
+            bloodPressureLinear.setOnClickListener {
+                findNavController().navigate(R.id.action_vitalMeasFragment_to_bloodPressureFragment)
+            }
+            foodLinear.setOnClickListener {
+                findNavController().navigate(R.id.action_vitalMeasFragment_to_foodFragment)
+            }
+            activityLinear.setOnClickListener {
+                findNavController().navigate(R.id.action_vitalMeasFragment_to_activityFragment)
+            }
+            hba1cLinear.setOnClickListener {
+                findNavController().navigate(R.id.action_vitalMeasFragment_to_hbA1cFragment)
+            }
+        }
     }
 }
